@@ -1,0 +1,7 @@
+#!/usr/bin/env jenkins-jobs update
+- job:
+    name: foo
+    node: master
+    builders:
+        - shell:
+            !include-jinja2: ./foo.sh.j2
